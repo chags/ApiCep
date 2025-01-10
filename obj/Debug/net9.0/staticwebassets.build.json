@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "c/WuOqJVHnDlQulnaNrQDd7QTPEYSFSRF5RtDcwKyf8=",
+  "Source": "apiCep",
+  "BasePath": "_content/apiCep",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
