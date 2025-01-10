@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("apiCep")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+86f55755c9dcc7b9563b4ba730becb809afda101")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e384b1bf7a46370cedae601560e177bcc8fc5bd2")]
 [assembly: System.Reflection.AssemblyProductAttribute("apiCep")]
 [assembly: System.Reflection.AssemblyTitleAttribute("apiCep")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,6 +1,6 @@
-# Apicep NETcode9
+# Apicep .NET core 9
 
-Quem precisa de consultar CEP em Apis publicas sabe que vez por outra elas 
+Quem precisa de consultar CEP em Apis publicas sabe que vez por outra falha ou elas 
 restringem as requisições. o que não gera confiabilidade. dai criei 
 essa que tem todos os CEPs do Brasil atualizados 2025.
 rode tudo do seu próprio servidor com alta velocidade de resposta.

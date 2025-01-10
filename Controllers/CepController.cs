@@ -1,6 +1,7 @@
-﻿using apiCep.Models;
-using apiCep.Services;
+﻿using apiCep.Services;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ApiExplorer;
+using Scalar.AspNetCore;
 
 namespace apiCep.Controllers
 {
@@ -18,18 +19,16 @@ namespace apiCep.Controllers
         [HttpGet("{cep}")]
         public IActionResult GetCepInfo(string cep)
         {
-            // Validate the CEP
             var validation = _cepService.ValidateCep(cep);
             if (!validation.IsValid)
             {
                 return BadRequest(new { Error = validation.ErrorMessage });
             }
 
-            // Fetch CEP information
             var cepInfo = _cepService.GetCepInfo(cep);
             if (cepInfo == null)
             {
-                return NotFound(new { Error = "CEP not found." });
+                return NotFound(new { Error = "CEP não encontrado." });
             }
 
             return Ok(cepInfo);
