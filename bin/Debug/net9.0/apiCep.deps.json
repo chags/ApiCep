@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v9.0": {
       "apiCep/1.0.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.OpenApi": "9.0.0"
+          "Microsoft.AspNetCore.OpenApi": "9.0.0",
+          "Scalar.AspNetCore": "1.2.74"
         },
         "runtime": {
           "apiCep.dll": {}
@@ -30,6 +31,14 @@
           "lib/netstandard2.0/Microsoft.OpenApi.dll": {
             "assemblyVersion": "1.6.17.0",
             "fileVersion": "1.6.17.0"
+          }
+        }
+      },
+      "Scalar.AspNetCore/1.2.74": {
+        "runtime": {
+          "lib/net9.0/Scalar.AspNetCore.dll": {
+            "assemblyVersion": "1.2.74.0",
+            "fileVersion": "1.2.74.0"
           }
         }
       }
@@ -54,6 +63,13 @@
       "sha512": "sha512-Le+kehlmrlQfuDFUt1zZ2dVwrhFQtKREdKBo+rexOwaCoYP0/qpgT9tLxCsZjsgR5Itk1UKPcbgO+FyaNid/bA==",
       "path": "microsoft.openapi/1.6.17",
       "hashPath": "microsoft.openapi.1.6.17.nupkg.sha512"
+    },
+    "Scalar.AspNetCore/1.2.74": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5dFjVJj/fRmlnZhmKJXPHLGjT4VnU5j7pJbAr8dNHDRBmvn+sDw2iiuMjyCCwZ/xPGVpiSlp0Nz9Bo8iE94Bnw==",
+      "path": "scalar.aspnetcore/1.2.74",
+      "hashPath": "scalar.aspnetcore.1.2.74.nupkg.sha512"
     }
   }
 }

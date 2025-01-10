@@ -12,9 +12,10 @@
     },
     "https": {
       "commandName": "Project",
-      "dotnetRunMessages": true,
+      "dotnetRunMessages": true,  
       "launchBrowser": true,
-      "launchUrl": "openapi/v1.json",
+      "launchUrl": "scala/v1",
+
       "applicationUrl": "https://localhost:7192;http://localhost:5268",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"

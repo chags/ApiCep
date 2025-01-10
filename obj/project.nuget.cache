@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "rFQk3ivRrMA=",
+  "dgSpecHash": "y22pvQfRjBw=",
   "success": true,
   "projectFilePath": "C:\\projects\\apiCep\\apiCep.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Cristiano\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.0\\microsoft.aspnetcore.openapi.9.0.0.nupkg.sha512",
-    "C:\\Users\\Cristiano\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+    "C:\\Users\\Cristiano\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512",
+    "C:\\Users\\Cristiano\\.nuget\\packages\\scalar.aspnetcore\\1.2.74\\scalar.aspnetcore.1.2.74.nupkg.sha512"
   ],
   "logs": []
 }

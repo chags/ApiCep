@@ -32,3 +32,6 @@ C:\projects\apiCep\obj\Debug\net9.0\refint\apiCep.dll
 C:\projects\apiCep\obj\Debug\net9.0\apiCep.pdb
 C:\projects\apiCep\obj\Debug\net9.0\apiCep.genruntimeconfig.cache
 C:\projects\apiCep\obj\Debug\net9.0\ref\apiCep.dll
+C:\projects\apiCep\bin\Debug\net9.0\Scalar.AspNetCore.dll
+C:\projects\apiCep\obj\Debug\net9.0\apiCep.sourcelink.json
+C:\projects\apiCep\bin\Debug\net9.0\Data\61652500.json

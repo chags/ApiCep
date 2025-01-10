@@ -1,23 +1,29 @@
+using Scalar.AspNetCore;
+using apiCep.Services; // Certifique-se de ter o namespace correto para CepService
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
+// Add services to the container
 builder.Services.AddControllers();
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi(); // padrão v1.json
+builder.Services.AddOpenApi(); // Generates OpenAPI documentation (v1.json)
+
+// Register CepService for dependency injection
+builder.Services.AddSingleton<CepService>();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Configure the HTTP request pipeline
 if (app.Environment.IsDevelopment())
 {
-    app.MapOpenApi();
+    app.UseDeveloperExceptionPage(); // Enables detailed error pages in development
+    app.MapOpenApi(); // Maps OpenAPI JSON and UI endpoints
+    app.MapScalarApiReference(); // Maps Scalar API reference
 }
 
-app.UseHttpsRedirection();
+app.UseHttpsRedirection(); // Redirects HTTP to HTTPS
 
-app.UseAuthorization();
+app.UseAuthorization(); // Ensures authorization middleware is active
 
-app.MapControllers();
+app.MapControllers(); // Maps routes to controllers
 
 app.Run();

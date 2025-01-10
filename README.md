@@ -1,97 +1,111 @@
-# Apicep
+# Apicep NETcode9
 
-Apicep is an API built using .NET Core 9 and the SACALA stack. It provides functionalities to manage and validate postal codes (CEPs) in a scalable and efficient manner.
+Quem precisa de consultar CEP em Apis publicas sabe que vez por outra elas 
+restringem as requisições. o que não gera confiabilidade. dai criei 
+essa que tem todos os CEPs do Brasil atualizados 2025.
+rode tudo do seu próprio servidor com alta velocidade de resposta.
+sem risco de falha.
 
-## Features
-- Validate Brazilian postal codes (CEPs).
-- Retrieve JSON data for a given CEP.
-- Handle invalid or non-existent CEPs gracefully.
 
-## Requirements
+Apicep é uma API desenvolvida utilizando .NET Core 9 e o stack SACALA. 
+Ela oferece funcionalidades para gerenciar e validar códigos postais (CEPs) 
+de maneira escalável e eficiente.
+
+## Funcionalidades
+- Validar códigos postais brasileiros (CEPs).
+- Retornar dados em formato JSON para um CEP informado.
+- Lidar com CEPs inválidos ou não encontrados de forma amigável.
+
+## Requisitos e Dependencias
 - .NET Core 9 SDK
-- A modern code editor (e.g., Visual Studio, Visual Studio Code)
-- Optional: Docker (for containerized deployments)
+- Scalar.AspNetCore (1.2.74)
+- Microsoft.AspNetCore.OpenApi (9.0.0)
+- Um editor de código moderno (ex.: Visual Studio, Visual Studio Code)
 
-## Installation
-1. Clone this repository:
+## Instalação
+1. Clone este repositório:
    ```bash
-   git clone https://github.com/yourusername/apicep.git
+   git clone https://github.com/chags/apicep.git
    cd apicep
    ```
-2. Restore the dependencies:
+2. Restaure as dependências:
    ```bash
    dotnet restore
    ```
-3. Build the project:
+3. Compile o projeto:
    ```bash
    dotnet build
    ```
 
-## Usage
+## Uso
 
-### Running the API locally
-1. Start the application:
+### Executando a API localmente
+1. Inicie a aplicação:
    ```bash
    dotnet run
    ```
-2. Access the API at `http://localhost:5000`.
+2. Acesse a API em `http://localhost:port` ou no endereço configurado.
+
+### Documentação
+A API utiliza o Scalar para documentação. Acesse a documentação interativa em:
+- `http://localhost:port/scalar/v1`
+
 
 ### Endpoints
 #### `GET /v1/{cep}`
-- **Description:** Retrieves information for the specified CEP.
-- **Parameters:**
-  - `cep`: A valid 8-digit postal code (e.g., `61652500`).
-- **Responses:**
-  - `200 OK`: Returns JSON data for the CEP.
-  - `400 Bad Request`: Invalid CEP format.
-  - `404 Not Found`: CEP not found.
+- **Descrição:** Retorna as informações para o CEP informado.
+- **Parâmetros:**
+  - `cep`: Um código postal válido com 8 dígitos (ex.: `61652500`).
+- **Respostas:**
+  - `200 OK`: Retorna os dados do CEP em formato JSON.
+  - `400 Bad Request`: Formato de CEP inválido.
+  - `404 Not Found`: CEP não encontrado.
 
-Example:
+Exemplo:
 ```bash
-GET http://localhost:5000/v1/61652500
+GET http://localhost:5000/v1/cep/61652500
 ```
-Response:
+Resposta:
 ```json
 {
+  "cep": "61652500",
   "address": "Rua Exemplo",
   "city": "Fortaleza",
   "state": "CE"
 }
 ```
 
-## File Structure
+## Estrutura do Projeto
 ```
 Apicep/
 ├── Controllers/
-│   └── CepController.cs  # Handles API requests
+│   └── CepController.cs  # Gerencia as requisições da API
 ├── Models/
-│   └── CepModel.cs       # Data structure for CEPs
+│   └── CepInfo.cs        # Estrutura de dados para os CEPs
 ├── Services/
-│   └── CepService.cs     # Business logic for CEP handling
-├── appsettings.json      # Application configuration
-├── Program.cs            # Entry point of the application
-└── Startup.cs            # Configures services and middleware
+│   └── CepService.cs     # Lógica de negócios para manipulação de CEPs
+├── appsettings.json      # Configuração da aplicação
+├── Program.cs            # Ponto de entrada da aplicação
+└── Startup.cs            # Configura serviços e middleware
 ```
 
-## Testing
-Run the tests to ensure everything is working correctly:
+## Testes
+Execute os testes para garantir que tudo está funcionando corretamente:
 ```bash
 dotnet test
 ```
 
-## Contributing
-Contributions are welcome! Please follow these steps:
-1. Fork the repository.
-2. Create a feature branch: `git checkout -b feature-name`.
-3. Commit your changes: `git commit -m 'Add new feature'`.
-4. Push to your branch: `git push origin feature-name`.
-5. Open a pull request.
+## Contribuição
+Contribuições são bem-vindas! Siga estes passos:
+1. Faça um fork do repositório.
+2. Crie uma branch para sua feature: `git checkout -b feature-nome`.
+3. Commit suas alterações: `git commit -m 'Adiciona nova funcionalidade'`.
+4. Faça o push da branch: `git push origin feature-nome`.
+5. Abra um pull request.
 
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+## Licença
+Este projeto está licenciado sob a Licença MIT. Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
 
-## Contact
-For questions or support, please reach out to [your email or contact info].
+## Contato
+Para dúvidas ou suporte, entre em contato em [seu-email-ou-informação-de-contato].
 
-# ApiCep
- 
