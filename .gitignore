@@ -1,1 +1,48 @@
+# Build files
+bin/
+obj/
+out/
+
+# Package files
+*.nupkg
+*.snupkg
+
+# Log files
+*.log
+Logs/
+
+# User-specific configurations
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Tool-generated directories
+.vscode/
+.resharper/
+_TeamCity/
+*.dotCover
+
+# Configuration files
+appsettings.Development.json
+appsettings.*.local.json
+*.launch.json
+
+# OS-generated temporary files
+.DS_Store
+Thumbs.db
+
+# Rider build files
+.idea/
+.idea_modules/
+.idea_solutions/
+
+# Visual Studio generated files
+*.vs/
 .vs/
+*.dbmdl
+*.cache
+*.pdb
+*.csproj.user
